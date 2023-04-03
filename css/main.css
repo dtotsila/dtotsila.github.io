@@ -143,7 +143,6 @@ picture {
 
 html {
     box-sizing: border-box
-
 }
 
 *,
@@ -405,6 +404,15 @@ body {
     line-height: 1.5
 }
 
+.button-news{
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    --padding-x: 1.2em;
+    border-color: transparent; /* hide button border */
+    border-radius: 40px
+}
+
 @media print {
     body {
         font-size: 0.9rem
@@ -422,12 +430,15 @@ h6 {
     line-height: 1.2;
     margin: 0 0 0.75rem
 }
-h3{
+
+h3 {
     color: #DCD7C9;
 }
-h2{
+
+h2 {
     color: #A27B5C;
 }
+
 p {
     margin: 0 0 0.75rem
 }
@@ -756,4 +767,16 @@ p.quote {
         padding: 0rem 1rem;
         margin-top: 1rem
     }
+}
+
+ul {
+    list-style: inside url('/assets/circle-regular.svg');
+    /* color: #A27B5C; */
+}
+
+.contact {
+    list-style: none;
+    margin-top: 10px;
+    /* make text bigger */
+    font-size: 2rem;
 }
