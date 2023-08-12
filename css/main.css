@@ -11,7 +11,7 @@ input[type="submit"] {
     background-color: #302B27;
     border: 0;
     border-radius: 3px;
-    color: #1d3557;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -36,7 +36,7 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
     background-color: #3964a2;
-    color: #1d3557
+    color: #ffffff
 }
 
 button:disabled,
@@ -171,17 +171,17 @@ html {
     transition: all 0.3s;
     border-radius: 0;
     background: #DEDEDE;
-    color: #a8dadc
+    color: #3c6e71
 }
 
 .btn:focus {
     background: #DEDEDE;
-    color: #a8dadc
+    color: #3c6e71
 }
 
 .btn:hover {
-    background: #1d3557;
-    color: #a8dadc
+    background: #ffffff;
+    color: #3c6e71
 }
 
 .btn:active {
@@ -189,14 +189,14 @@ html {
 }
 
 .btn.disabled {
-    background: #f1faee;
-    color: #a8dadc;
+    background: #353535;
+    color: #3c6e71;
     cursor: default;
     top: 0px
 }
 
 body {
-    background: #f1faee;
+    background: #353535;
     font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased
 }
@@ -329,7 +329,7 @@ body {
     height: 100%;
     border-radius: inherit;
     z-index: -1;
-    box-shadow: inset 0 0 0 35px #a8dadc;
+    box-shadow: inset 0 0 0 35px #3c6e71;
     -webkit-transform: scale3d(0.9, 0.9, 1);
     transform: scale3d(0.9, 0.9, 1);
     -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3;
@@ -365,23 +365,23 @@ body {
     height: 60px;
     min-width: 0;
     padding: 0;
-    color: #1d3557;
+    color: #ffffff;
     -webkit-transition: color 0.3s;
     transition: color 0.3s
 }
 
 .button--sacnite:hover {
-    color: #1d3557
+    color: #ffffff
 }
 
 .button--sacnite:hover::before {
-    box-shadow: inset 0 0 0 2px #1d3557;
+    box-shadow: inset 0 0 0 2px #ffffff;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1)
 }
 
 .dark .button--sacnite::before {
-    box-shadow: inset 0 0 0 35px #1d3557
+    box-shadow: inset 0 0 0 35px #ffffff
 }
 
 .dark .button.button--sacnite {
@@ -389,15 +389,15 @@ body {
 }
 
 .dark .button--sacnite:hover {
-    color: #1d3557
+    color: #ffffff
 }
 
 .dark .button--sacnite:hover::before {
-    box-shadow: inset 0 0 0 2px #1d3557
+    box-shadow: inset 0 0 0 2px #ffffff
 }
 
 body {
-    color: #1d3557;
+    color: #ffffff;
     font-family: Roboto, sans-serif;
     font-feature-settings: "kern", "liga", "pnum";
     font-size: 1rem;
@@ -432,11 +432,11 @@ h6 {
 }
 
 h3 {
-    color: #1d3557;
+    color: #3c6e71;
 }
 
 h2 {
-    color: #457b9d;
+    color: #3c6e71;
 }
 
 p {
@@ -444,14 +444,14 @@ p {
 }
 
 a {
-    color: #e63946;
+    color: #3c6e71;
     transition: color 150ms ease
 }
 
 a:active,
 a:focus,
 a:hover {
-    color: #355e98
+    color: #b5838d
 }
 
 h1 {
@@ -466,10 +466,10 @@ h2 {
 }
 
 h3 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3rem;
     text-align: center;
-    border-bottom: 4mm ridge #a8dadc;
+    border-bottom: double  #d9d9d9;
     padding-bottom: 10px;
     margin-bottom: 40px
 }
@@ -499,8 +499,8 @@ a i {
 mark {
     padding: 2px 4px;
     font-size: 90%;
-    color: #f1faee;
-    background-color: #1d3557;
+    color: #284b63;
+    background-color: #d9d9d9;
     border-radius: 3px;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
@@ -508,16 +508,16 @@ mark {
 
 .dark {
     background-color: #222;
-    color: #1d3557
+    color: #ffffff
 }
 
 .dark mark {
     color: #222;
-    background-color: #1d3557
+    background-color: #ffffff
 }
 
 .dark a {
-    color: #e63946;
+    color: #3c6e71;
 }
 
 ul.icons a:hover {
@@ -570,7 +570,7 @@ ul.icons a {
 }
 
 .dark .icons a:hover i {
-    color: #1d3557
+    color: #ffffff
 }
 
 .header-right p {
@@ -771,7 +771,7 @@ p.quote {
 
 ul {
     list-style: inside url('/assets/circle-regular.svg');
-    /* color: #a8dadc; */
+    /* color: #3c6e71; */
 }
 
 .contact {
@@ -791,4 +791,9 @@ ul {
     font-size: 1.6rem;
     text-align: inherit;
     font-weight: 300
+}
+
+.keywords{
+    font-style: italic;
+    font-size: small;
 }
