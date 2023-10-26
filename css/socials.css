@@ -1,0 +1,35 @@
+/* Social Media Buttons Styles */
+
+.social-media-container {
+    position: relative;
+    bottom: 0;
+    left: 25%;
+    /* padding: 10px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: auto;
+
+}
+
+
+.social-media-button{
+    text-align: center;
+    display:inline-block;
+    vertical-align: middle;
+    line-height: 100%;
+    padding: 25%;
+    /* border-radius: 10px; */
+}
+
+
+
+.fa {
+    font-size: 2rem;
+}
+
+.fa-brands{
+    font-size: 2rem;
+}
