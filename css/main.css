@@ -253,7 +253,7 @@ nav a:hover {
     margin-left: 20px;
 }
 
-.cv-entry {
+.entry {
     background-color: rgba(207, 207, 204, 0.319);
     box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -264,7 +264,7 @@ nav a:hover {
 
 }
 
-.cv-date {
+.entry-date {
     flex: 1;
     /* Takes up 1/3 of the available space */
     text-align: left;
@@ -273,7 +273,20 @@ nav a:hover {
     /* Align date to the left */
 }
 
-.cv-details {
+.publication-cover{
+    text-align: center;
+
+}
+.publication-cover img {
+    /* font-size: 150%; */
+    position: relative;
+    width: 50%;
+    margin: 4%
+
+
+}
+
+.entry-details {
     flex: 2;
     /* Takes up 2/3 of the available space */
     text-align: left;
@@ -283,7 +296,7 @@ nav a:hover {
     color: #1b1c23;
 }
 
-.cv-details h3 {
+.entry-details h3 {
     color: #ddd5d3;
     font-weight: bold;
     font-size: 20px;
@@ -291,6 +304,11 @@ nav a:hover {
     font-family: 'Caveat', cursive;
 }
 
+.publication-title{
+    /* override parent */
+    font-family: 'Playfair Display', serif !important;
+    margin: 1%;
+}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
