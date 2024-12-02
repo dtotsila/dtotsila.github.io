@@ -20,7 +20,8 @@
     display:inline-block;
     vertical-align: middle;
     line-height: 100%;
-    padding: 25%;
+    margin: 10%;
+    color: #ebcb8b;
     /* border-radius: 10px; */
 }
 

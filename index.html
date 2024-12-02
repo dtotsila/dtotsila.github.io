@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#1b1c23">
-        <meta name="google-site-verification"
-            content="sSYGKkNVerRz9-Q-mkri_MzdxyhAE-8yBGXOEYWGAoU">
-        <script src="https://kit.fontawesome.com/ef70d6365d.js"
-            crossorigin="anonymous"></script>
-        <title>Dionis Totsila</title>
-        <link rel="icon" type="image/x-icon" href="/assets/Mini-Robot.png">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/socials.css">
-        <link rel="stylesheet" href="css/buttons.css">
-        <script src="js/main.js"></script>
-    </head>
-    <body>
-        <header id="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <div class="centered-container">
-            <div class="centered-text">
-                <div class="cv-header">
-                    <img src="assets/dt.png" alt="Dionis Totsila Photo"
-                        class="cv-photo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification"
+            content="sSYGKkNVerRz9-Q-mkri_MzdxyhAE-8yBGXOEYWGAoU">
+    <title>Dionis Totsila - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <script src="https://kit.fontawesome.com/ef70d6365d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+    <main>
+        <div class="container">
+            <header>
+                <h2>Prompt</h2>
+                <div class="system-prompt">
+                    You are a biographer. Introduce Dionis Totsila in a short paragraph.
                 </div>
-                <h1>Dionis Totsila</h1>
-                <p class="job-title"><em>Doctoral Researcher</em>, Inria Nancy </br>
-                    Phd Candidate, University of Lorraine</p>
+                </header>
+
+            <div id="home-content">
+                <!-- Image container -->
+                <div id="image-container">
+                    <div id="generating-image-message">
+                        <p class="glowing-text">Generating image...</p>
+                    </div>
+                    <img id="profile-image" src="your-image.jpg" alt="Dionis Totsila" />
+                </div>
+                <h2>Response</h2>
+                <p id="dynamic-response">Generating content...</p>
             </div>
-            <div class="golden-box">
-                <h2>About Me</h2>
-                <p class="golden-paragraph">I am currently a Doctoral Researcher
-                    at <a
-                        href="https://www.inria.fr/fr/centre-inria-de-luniversite-de-lorraine"
-                        target="_blank"
-                        rel="noopener noreferrer"> INRIA Nancy</a> (<a
-                        href="https://team.inria.fr/larsen/" target="_blank"
-                        rel="noopener noreferrer">LARSEN
-                        Team</a>),
-                    under the supervision of <a
-                        href="https://members.loria.fr/SIvaldi/" target="_blank"
-                        rel="noopener noreferrer">Dr. Serena Ivaldi</a>,
-                    and
-                    <a href="https://members.loria.fr/JBMouret/" target="_blank"
-                        rel="noopener noreferrer">Dr. Jean-Baptiste Mouret</a>,
-                    my work focuses on learning bimanual robot skills from human
-                    demonstrations and
-                    natural language. My primary research interests are:
-                    continuous control using dynamical system-based
-                    policies, Teleoperation, Natural Language Processing,
-                    Multi-Modal Learning, and Whole-Body Control.</p>
-            </div>
+
         </div>
-    </body>
+        <div class="social-media-container show-social-media">
+            <a href="https://www.linkedin.com/in/dionis-totsila/" class="social-media-button linkedin button
+                button--sacnite button--round-l" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-solid fa-linkedin" title="Linked-in" aria-hidden="true"></i><span class="sr-only">Linked-in</span>
+            </a>
+            <a href="https://twitter.com/dionistotsila" class="social-media-button twitter button
+                button--sacnite button--round-l" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter" title="Twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span>
+            </a>
+            <a href="https://github.com/dtotsila" class="social-media-button
+                github button
+                button--sacnite button--round-l" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-solid fa-github" title="Github" aria-hidden="true"></i><span class="sr-only">Github</span>
+            </a>
+            <a href="https://t.me/dtotsila" class="social-media-button
+                github button
+                button--sacnite button--round-l" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-solid fa-telegram" title="Telegram" aria-hidden="true"></i><span class="sr-only">Telegram</span>
+            </a>
+
+            <!-- insert email -->
+            <a href="mailto:dionis.totsila@inria.fr" class="social-media-button
+                button--sacnite button--round-l" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-solid fa-envelope" title="Email" aria-hidden="true"></i><span class="sr-only">Email</span>
+
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Generate dynamic content for the home page
+        generateDynamicResponse('home-content');
+        // Generate the image dynamically after a delay
+        setTimeout(loadProfileImage, 1500);
+    </script>
+</body>
+
 </html>
