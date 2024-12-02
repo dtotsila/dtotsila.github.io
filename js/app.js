@@ -10,10 +10,10 @@ function typeWriterWithMarkdown(element, markdownText, speed = 50) {
 
         if (i <= all_words.length) {
             currentText = all_words.slice(0, i).join(' ');
-            console.log(currentText)
+            // console.log(currentText)
             const words = currentText.split(' '); // Split the current text into words
             const renderedHtml = marked.parse(words.join(' ')); // Parse the current words and join them back with spaces
-            console.log(renderedHtml);
+            // console.log(renderedHtml);
             element.innerHTML = renderedHtml; // Insert rendered HTML
             i++;
             setTimeout(type, speed); // Adjust the speed as needed
