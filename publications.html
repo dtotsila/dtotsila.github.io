@@ -1,54 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#1b1c23">
 
-        <meta name="google-site-verification"
-            content="sSYGKkNVerRz9-Q-mkri_MzdxyhAE-8yBGXOEYWGAoU">
-        <title>Dionis Totsila - Publications</title>
-        <link rel="icon" type="image/x-icon" href="/assets/Mini-Robot.png">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/buttons.css">
-        <script src="js/resume.js"></script>
-    </head>
-    <body>
-        <header id="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Resume content starts here -->
-        <div class="cv-container">
-            <!-- <div class="cv-header">
-                <img src="assets/dt.png" alt="Dionis Totsila Photo"
-                    class="cv-photo">
-                <h1>Dionis Totsila</h1>
-            </div> -->
-            <div class="cv-section">
-                <h2>Peer-reviewed Workshop Papers</h2>
-                <div class="entry">
-                    <div class="entry-date  publication-cover"><img src="assets/papers_cover/andps.png" alt="ANDPS"></div>
-                    <div class="entry-details">
-                        <h3 class="publication-title">End-to-End Stable Imitation Learning via Autonomous
-                            Neural Dynamic Policies</h3>
-                        <h4><em>Dionis Totsila*</em>, Konstantinos
-                            Chatzilygeroudis*, Denis Hadjivelichkov, Valerio
-                            Modugno, Ioannis Hatzilygeroudis, and Dimitrios
-                            Kanoulas.</h4>
-                        <p class="entry-details-company"> Life-Long Learning with Human Help (L3H2) Workshop, at ICRA, 2023 </p>
-                        <p class="entry-details-desc"> <a href="https://arxiv.org/abs/2305.12886">(view online)</a></p>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1b1c23">
+    <meta name="google-site-verification" content="sSYGKkNVerRz9-Q-mkri_MzdxyhAE-8yBGXOEYWGAoU">
+    <title>Dionis Totsila - Publications</title>
+    <link rel="icon" type="image/x-icon" href="/assets/Mini-Robot.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- External JS file for dynamic content -->
+    <script src="https://kit.fontawesome.com/ef70d6365d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Include marked.js -->
+    <!-- <script src="app.js" defer></script> External JS file -->
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Pre-prints (Under Review)</h2>
+            <div class="system-prompt">
+                <!-- <h2>Publications</h2> -->
+                <div class="paper-title">
+                    Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies
                 </div>
-            </div>
-        </div> <!-- Resume content ends here -->
+                <div class="paper-auth">
+                    <em>Dionis Totsila </em>,
+                    Konstantinos Chatzilygeroudis,
+                    Valerio Modugno,
+                    Denis Hadjivelichkov, and
+                    Dimitrios Kanoulas.
+                </div>
+                <div class="paper-venue">
+                    Submitted to IEEE Robotics and Automation Letters (RA-L) , 2024
+                </div>
+                <div class="paper-urls">
+                    <a href="https://www.youtube.com/watch?v=ZI9-TLSovpQ" class="fa-urls" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/NOSALRO/andps" class="fa-urls" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://nosalro.github.io/andps/" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
 
-    </body>
+                <hr>
+            </div>
+            <h2>Peer-reviewed Journal Papers</h2>
+            <div class="system-prompt">
+                <!-- <h2>Publications</h2> -->
+                <div class="paper-title">
+                    RobotDART: a versatile robot simulator for robotics and machine learning researchers
+                </div>
+                <div class="paper-auth">
+                    Konstantinos Chatzilygeroudis, Dionis Totsila, and Jean-Baptiste Mouret.
+                </div>
+                <div class="paper-venue">
+                    Journal of Open Source Software
+                </div>
+                <div class="paper-urls">
+                    <a href="https://joss.theoj.org/papers/10.21105/joss.06771" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                    <a href="https://github.com/NOSALRO/robot_dart" class="fa-urls" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://nosalro.github.io/robot_dart/" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+
+                <hr>
+            </div>
+            <h2>Peer-reviewed Conference Papers</h2>
+            <div class="system-prompt">
+                <div class="paper-title">
+                    Words2Contact: Identifying Support Contacts from Verbal Instructions Using Foundation Models
+                </div>
+                <div class="paper-auth">
+                    Dionis Totsila, Quentin Rouxel, Jean-Baptiste Mouret, and Serena Ivaldi
+                </div>
+                <div class="paper-venue">
+                    IEEE-RAS International Conference on Humanoid Robots, 2024
+                </div>
+                <div class="paper-urls">
+                    <a href="https://arxiv.org/abs/2407.14229" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=txT25hUpBPQ" class="fa-urls" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/hucebot/words2contact" class="fa-urls" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://hucebot.github.io/words2contact_website/" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <h2>Peer-reviewed Workshop Papers</h2>
+            <div class="system-prompt">
+                <div class="paper-title">
+                    End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies
+                </div>
+                <div class="paper-auth">
+                    Dionis Totsila*, Konstantinos Chatzilygeroudis*, Denis Hadjivelichkov, Valerio Modugno, Ioannis
+                    Hatzilygeroudis, and Dimitrios Kanoulas.
+                </div>
+                <div class="paper-venue">
+                    Life-Long Learning with Human Help (L3H2) Workshop, ICRA, 2023
+                </div>
+                <div class="paper-urls">
+                    <a href="https://arxiv.org/abs/2305.12886" class="fa-urls" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
