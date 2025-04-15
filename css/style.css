@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #2E3440;
+    background-color: #c5d5ea;
     color: #D8DEE9;
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ nav {
 
 nav a {
     font-size: 1.2rem;
-    color: #88c0d0;
+    color: #b3c5d7;
     text-transform: uppercase;
     padding: 10px;
     text-align: center;
@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #88c0d0;
+    background-color: #b3c5d7;
     color: #2e3400;
 }
 
@@ -84,9 +84,15 @@ main {
     margin: 0 auto;
 }
 
+.container h2 {
+    /* font-size: 2rem; */
+    color: #7392b7;
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
 /* System Prompt */
 .system-prompt {
-    background: #434c5e;
+    background: #3f4045;
     border: none;
     color: #EEF0EB;
     padding: 10px;
@@ -104,7 +110,7 @@ main {
 .paper-title {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #8fbcbb;
+    color: #7392b7;
     text-align: left;
 }
 
@@ -117,6 +123,13 @@ main {
     margin-bottom: 1%;
 }
 
+.cv-header{
+    /* font-size: 2rem; */
+    font-weight: 500;
+    color: #cc5803;
+    text-align: left;
+    margin-bottom: 1%;
+}
 .cv-date{
 
     color: rgb(138, 145, 145);
@@ -138,7 +151,7 @@ main {
 .cv-title {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #8fbcbb;
+    color: #7392b7;
     text-align: left;
     line-height: 0.1px;
 
@@ -159,7 +172,7 @@ main {
     margin-top: 20px;
     color: #e0e0e0;
     padding: 10px;
-    background: #434c5e;
+    background: #3f4045;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -238,7 +251,7 @@ main {
     height: auto;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border: 3px solid #434c5e;
+    border: 3px solid #3f4045;
 }
 
 /* Footer */
@@ -265,12 +278,13 @@ footer {
     display: flex;
     justify-content: left;
     align-items: center;
+    color: #cc5803;
 
 }
 
 
 .fa-urls{
-    color: #D8DEE9;
+    color: #cc5803;
     font-size: 1.4rem;
     margin-right: 2%;
     margin-left: 1%;
