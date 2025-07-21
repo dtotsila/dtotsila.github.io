@@ -55,7 +55,7 @@ function loadProfileImage() {
     generatingMessage.style.display = 'none'; // Hide the "generating image" message
 
     // Set the image source (replace with your image path)
-    profileImage.src = 'assets/dt.png';  // Make sure to set your image path here.
+    profileImage.src = 'assets/dt.jpg';  // Make sure to set your image path here.
 }
 
 // Auto-resize textarea based on content input
