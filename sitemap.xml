@@ -6,29 +6,28 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://dtotsila.github.io/</loc>
-  <lastmod>2023-10-27T10:44:37+00:00</lastmod>
+  <lastmod>2026-09-18T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://dtotsila.github.io/index.html</loc>
-  <lastmod>2023-10-27T10:44:37+00:00</lastmod>
+  <lastmod>2026-09-18T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dtotsila.github.io/resume.html</loc>
-  <lastmod>2023-10-27T10:44:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dtotsila.github.io/contact.html</loc>
-  <lastmod>2023-10-27T10:44:37+00:00</lastmod>
+  <lastmod>2026-09-18T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dtotsila.github.io/publications.html</loc>
-  <lastmod>2023-10-27T10:44:37+00:00</lastmod>
+  <lastmod>2026-09-18T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://dtotsila.github.io/videos.html</loc>
+  <lastmod>2026-09-18T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>

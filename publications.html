@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#1b1c23">
+    <meta name="theme-color" content="#F0EAE0">
     <meta name="google-site-verification" content="sSYGKkNVerRz9-Q-mkri_MzdxyhAE-8yBGXOEYWGAoU">
+    <meta name="description" content="Publications by Dionis Totsila on robot learning, vision-language models, and humanoid whole-body control.">
+    <meta property="og:title" content="Dionis Totsila - Publications">
+    <meta property="og:description" content="Publications by Dionis Totsila on robot learning, vision-language models, and humanoid whole-body control.">
+    <meta property="og:image" content="https://dtotsila.github.io/assets/dt.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@dionistotsila">
+    <meta name="twitter:title" content="Dionis Totsila - Publications">
+    <meta name="twitter:description" content="Publications by Dionis Totsila on robot learning, vision-language models, and humanoid whole-body control.">
+    <meta name="twitter:image" content="https://dtotsila.github.io/assets/dt.png">
     <title>Dionis Totsila - Publications</title>
-    <link rel="icon" type="image/x-icon" href="/assets/Mini-Robot.png">
+    <link rel="icon" type="image/png" href="assets/Mini-Robot.png">
+    <link rel="apple-touch-icon" href="assets/Mini-Robot.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- External JS file for dynamic content -->
     <script src="https://kit.fontawesome.com/ef70d6365d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Include marked.js -->
-    <!-- <script src="app.js" defer></script> External JS file -->
 </head>
 
 <body>
@@ -26,173 +37,179 @@
 
     <main>
         <div class="container">
+            <h1>Publications</h1>
+            <p class="scholar-stats">
+                <a href="https://scholar.google.com/citations?user=HrCRykUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            </p>
+
             <h2>Pre-prints (Under Review)</h2>
-            <div class="system-prompt">
-                <!-- <h2>Publications</h2> -->
-                <div class="paper-title">
-                    From Vocal Instructions to Household Tasks: The Inria Tiago++ in the euROBIN Service Robots Coopetition
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/laser_attention.png" alt="LaserAttention pipeline: VLM-based human-intent extraction and 3D segmentation feeding an LLM spatial reasoning and control module, demonstrated on a Tiago++ humanoid pointing at a target on a table" loading="lazy">
                 </div>
-                <div class="paper-auth">
-                    Fabio Amadio*,
-                    Clemente Donoso*,
-                    <em>Dionis Totsila*</em>,
-                    Raphael Lorenzo,
-                    Quentin Rouxel,
-                    Olivier Rochel,
-                    Enrico Mingo Hoffman,
-                    Jean-Baptiste Mouret,
-                    Serena Ivaldi
-                    <br>(* indicates equal contribution)
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        LaserAttention: Vision-Language Models for Joint Attention in Human-Robot Interaction
+                    </div>
+                    <div class="paper-auth">
+                        <em>Dionis Totsila</em>, Clemente Donoso, Quentin Rouxel, Jean-Baptiste Mouret, Serena Ivaldi
+                    </div>
+                    <span class="meta-label">Submitted to IEEE Transactions on Robotics (T-RO)</span>
                 </div>
-                <div class="paper-venue">
-                    IEEE Robotics and Automation Practice (RA-P)
-                </div>
-                <div class="paper-urls">
-                    <a href="https://arxiv.org/pdf/2412.17861" class="fa-urls" target="_blank"></a>
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=5mSIYuH4Mdk" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-
-                <hr>
-            </div>
-            <div class="system-prompt">
-                <!-- <h2>Publications</h2> -->
-                <div class="paper-title">
-                    Safe Bimanual Teleoperation with Language-Guided Collision Avoidance
-                </div>
-                <div class="paper-auth">
-                    <em>Dionis Totsila*</em>,
-                    Clemente Donoso*,
-                    Enrico Mingo Hoffman,
-                    Jean-Baptiste Mouret,
-                    Serena Ivaldi
-                    <br>(* indicates equal contribution)
-                </div>
-                <div class="paper-venue">
-                    IEEE Conference on Telepresence
-                </div>
-                
-                <div class="paper-urls">
-                    <a href="https://arxiv.org/pdf/2507.04791" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=AkiE5izSgMk" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://hucebot.github.io/vlm_safe_teleop_website/" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                </div>
-
-                <hr>
             </div>
 
             <h2>Peer-reviewed Journal Papers</h2>
-            <div class="system-prompt">
-                <!-- <h2>Publications</h2> -->
-                <div class="paper-title">
-                    Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/eurobin_rap.png" alt="euROBIN Tiago++ service robot diagram" loading="lazy">
                 </div>
-                <div class="paper-auth">
-                    <em>Dionis Totsila </em>,
-                    Konstantinos Chatzilygeroudis,
-                    Valerio Modugno,
-                    Denis Hadjivelichkov, and
-                    Dimitrios Kanoulas.
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        From Vocal Instructions to Household Tasks: The Inria Tiago++ in the euROBIN Service Robots Coopetition
+                    </div>
+                    <div class="paper-auth">
+                        Fabio Amadio*, Clemente Donoso*, <em>Dionis Totsila*</em>, Raphael Lorenzo, Quentin Rouxel,
+                        Olivier Rochel, Enrico Mingo Hoffman, Jean-Baptiste Mouret, Serena Ivaldi
+                        <br>(* indicates equal contribution)
+                    </div>
+                    <span class="meta-label">IEEE Robotics and Automation Practice (RA-P), 2026</span>
+                    <div class="paper-urls">
+                        <a href="https://arxiv.org/pdf/2412.17861" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                        <a href="https://www.youtube.com/watch?v=5mSIYuH4Mdk" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="paper-venue">
-                    IEEE Robotics and Automation Letters (RA-L)
-                </div>
-                <div class="paper-urls">
-                    <a href="https://www.youtube.com/watch?v=ZI9-TLSovpQ" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://github.com/NOSALRO/andps" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://nosalro.github.io/andps/" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                </div>
-                
-
-                <hr>
             </div>
-            <div class="system-prompt">
-                <!-- <h2>Publications</h2> -->
-                <div class="paper-title">
-                    RobotDART: a versatile robot simulator for robotics and machine learning researchers
-                </div>
-                <div class="paper-auth">
-                    Konstantinos Chatzilygeroudis, <em>Dionis Totsila</em>, and Jean-Baptiste Mouret.
-                </div>
-                <div class="paper-venue">
-                    Journal of Open Source Software
-                </div>
-                <div class="paper-urls">
-                    <a href="https://joss.theoj.org/papers/10.21105/joss.06771" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                    <a href="https://github.com/NOSALRO/robot_dart" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://nosalro.github.io/robot_dart/" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                </div>
 
-                <hr>
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/andps_v2.png" alt="Autonomous Neural Dynamic Policy on a quadruped robot" loading="lazy">
+                </div>
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        Sensorimotor Learning with Stability Guarantees via Autonomous Neural Dynamic Policies
+                    </div>
+                    <div class="paper-auth">
+                        <em>Dionis Totsila</em>, Konstantinos Chatzilygeroudis, Valerio Modugno, Denis Hadjivelichkov, and Dimitrios Kanoulas
+                    </div>
+                    <span class="meta-label">IEEE Robotics and Automation Letters (RA-L), 2025</span>
+                    <div class="paper-urls">
+                        <a href="https://www.youtube.com/watch?v=ZI9-TLSovpQ" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/NOSALRO/andps" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://nosalro.github.io/andps/" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
             </div>
+
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/robot_dart.png" alt="RobotDART simulator diagram" loading="lazy">
+                </div>
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        RobotDART: a versatile robot simulator for robotics and machine learning researchers
+                    </div>
+                    <div class="paper-auth">
+                        Konstantinos Chatzilygeroudis, <em>Dionis Totsila</em>, and Jean-Baptiste Mouret
+                    </div>
+                    <span class="meta-label">Journal of Open Source Software, 2024</span>
+                    <div class="paper-urls">
+                        <a href="https://joss.theoj.org/papers/10.21105/joss.06771" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                        <a href="https://github.com/NOSALRO/robot_dart" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://nosalro.github.io/robot_dart/" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <h2>Peer-reviewed Conference Papers</h2>
-            <div class="system-prompt">
-                <div class="paper-title">
-                    Words2Contact: Identifying Support Contacts from Verbal Instructions Using Foundation Models
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/safe_bimanual_teleop.png" alt="Safe bimanual teleoperation concept diagram" loading="lazy">
                 </div>
-                <div class="paper-auth">
-                    <em>Dionis Totsila</em>, Quentin Rouxel, Jean-Baptiste Mouret, and Serena Ivaldi
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        Safe Bimanual Teleoperation with Language-Guided Collision Avoidance
+                    </div>
+                    <div class="paper-auth">
+                        <em>Dionis Totsila*</em>, Clemente Donoso*, Enrico Mingo Hoffman, Jean-Baptiste Mouret, Serena Ivaldi
+                        <br>(* indicates equal contribution)
+                    </div>
+                    <span class="meta-label">IEEE Conference on Telepresence, 2025</span>
+                    <div class="paper-urls">
+                        <a href="https://arxiv.org/pdf/2507.04791" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                        <a href="https://www.youtube.com/watch?v=AkiE5izSgMk" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://hucebot.github.io/vlm_safe_teleop_website/" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
+                    </div>
                 </div>
-                <div class="paper-venue">
-                    IEEE-RAS International Conference on Humanoid Robots, 2024
-                </div>
-                <div class="paper-urls">
-                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10769902" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=txT25hUpBPQ" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://github.com/hucebot/words2contact" class="fa-urls" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://hucebot.github.io/words2contact_website/" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-globe"></i>
-                    </a>
-                </div>
-                <hr>
             </div>
+
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/words2contact.png" alt="Words2Contact concept diagram" loading="lazy">
+                </div>
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        Words2Contact: Identifying Support Contacts from Verbal Instructions Using Foundation Models
+                    </div>
+                    <div class="paper-auth">
+                        <em>Dionis Totsila</em>, Quentin Rouxel, Jean-Baptiste Mouret, and Serena Ivaldi
+                    </div>
+                    <span class="meta-label">IEEE-RAS International Conference on Humanoid Robots, 2024</span>
+                    <div class="paper-urls">
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10769902" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                        <a href="https://www.youtube.com/watch?v=txT25hUpBPQ" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/hucebot/words2contact" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://hucebot.github.io/words2contact_website/" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <h2>Peer-reviewed Workshop Papers</h2>
-            <div class="system-prompt">
-                <div class="paper-title">
-                    End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies
+            <div class="card pub-card">
+                <div class="pub-card__media">
+                    <img src="assets/concept_figures/andps_v1.png" alt="Autonomous Neural Dynamic Policy simulation diagram" loading="lazy">
+                </div>
+                <div class="pub-card__body">
+                    <div class="card-title">
+                        End-to-End Stable Imitation Learning via Autonomous Neural Dynamic Policies
+                    </div>
+                    <div class="paper-auth">
+                        <em>Dionis Totsila*</em>, Konstantinos Chatzilygeroudis*, Denis Hadjivelichkov, Valerio Modugno,
+                        Ioannis Hatzilygeroudis, and Dimitrios Kanoulas
+                        <br>(* indicates equal contribution)
+                    </div>
+                    <span class="meta-label">Life-Long Learning with Human Help (L3H2) Workshop, ICRA, 2023</span>
+                    <div class="paper-urls">
+                        <a href="https://arxiv.org/abs/2305.12886" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Patents</h2>
+            <div class="card pub-card pub-card--no-media">
+                <span class="tag">Patent</span>
+                <div class="card-title">
+                    Système d'interaction robotique <span class="meta-label" style="display:inline; margin:0;">(Robotic Interaction System)</span>
                 </div>
                 <div class="paper-auth">
-                    <em>Dionis Totsila*</em>, Konstantinos Chatzilygeroudis*, Denis Hadjivelichkov, Valerio Modugno,
-                    Ioannis
-                    Hatzilygeroudis, and Dimitrios Kanoulas.<br>(* indicates equal contribution)
+                    D. Totsila, S. Ivaldi, J.-B. Mouret, and C. Donoso Krauss
                 </div>
-                <div class="paper-venue">
-                    Life-Long Learning with Human Help (L3H2) Workshop, ICRA, 2023
-                </div>
+                <span class="meta-label">Patent FR2513437 · Filed Nov 17, 2025</span>
                 <div class="paper-urls">
-                    <a href="https://arxiv.org/abs/2305.12886" class="fa-urls" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
+                    <a href="https://hal.science/hal-05420488" class="fa-urls" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
                 </div>
-                <hr>
             </div>
+
+            <h2>Talks &amp; Presentations</h2>
+            <ul class="talks-list">
+                <li>
+                    <strong>Sensorimotor learning with stability guarantees via autonomous neural dynamic policies</strong> —
+                    Short talk and discussion, <span class="meta-label" style="display:inline; margin:0;">Embodied Intelligence Conference, 2023</span>
+                </li>
+                <li>
+                    <strong>Sensorimotor learning with stability guarantees via autonomous neural dynamic policies</strong> —
+                    Abstract presentation, <span class="meta-label" style="display:inline; margin:0;">17th Learning and Intelligent Optimization Conference (LION17), 2023</span>
+                </li>
+            </ul>
         </div>
     </main>
 </body>

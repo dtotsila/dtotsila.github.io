@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#F0EAE0">
+  <meta name="description" content="Robot demo videos by Dionis Totsila.">
+  <meta property="og:title" content="Dionis Totsila - Videos">
+  <meta property="og:description" content="Robot demo videos by Dionis Totsila.">
+  <meta property="og:image" content="https://dtotsila.github.io/assets/dt.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dionistotsila">
+  <meta name="twitter:title" content="Dionis Totsila - Videos">
+  <meta name="twitter:description" content="Robot demo videos by Dionis Totsila.">
+  <meta name="twitter:image" content="https://dtotsila.github.io/assets/dt.png">
   <title>Dionis Totsila - Videos</title>
+  <link rel="icon" type="image/png" href="assets/Mini-Robot.png">
+  <link rel="apple-touch-icon" href="assets/Mini-Robot.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/socials.css" />
 </head>
 <body>
   <nav>
@@ -13,35 +28,84 @@
     <a href="publications.html">Publications</a>
     <a href="resume.html">Resume</a>
     <a href="videos.html">Videos</a>
-    <!-- <a href="news.html">News</a> -->
   </nav>
 
   <main>
     <div class="container">
       <h1>Videos</h1>
 
-      <div class="video-grid">
-        <div class="video-entry">
-          <iframe src="https://www.youtube.com/embed/5mSIYuH4Mdk" frameborder="0" allowfullscreen></iframe>
-          <p><strong>From Vocal Instructions to Household Tasks</strong><br>Tiago++ in the euROBIN Service Robots Coopetition</p>
-        </div>
+      <div class="story-carousel">
+        <button class="carousel-arrow carousel-arrow--prev" id="carousel-prev" aria-label="Previous video">
+          <svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow--next" id="carousel-next" aria-label="Next video">
+          <svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8"/></svg>
+        </button>
 
-        <div class="video-entry">
-          <iframe src="https://www.youtube.com/embed/AkiE5izSgMk" frameborder="0" allowfullscreen></iframe>
-          <p><strong>Safe Bimanual Teleoperation with Language-Guided Collision Avoidance</strong><br>IEEE Conference on Telepresence</p>
-        </div>
+        <div class="story-track" id="story-track">
+          <button class="story-card" data-video-id="5mSIYuH4Mdk" data-title="From Vocal Instructions to Household Tasks">
+            <span class="story-card__media">
+              <img src="assets/concept_figures/eurobin_rap.png" alt="From Vocal Instructions to Household Tasks demo thumbnail" loading="lazy">
+              <span class="story-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
+              </span>
+            </span>
+            <span class="story-card__caption">
+              <strong>From Vocal Instructions to Household Tasks</strong>
+              <span class="meta-label">euROBIN · Tiago++ Coopetition</span>
+            </span>
+          </button>
 
-        <div class="video-entry">
-          <iframe src="https://www.youtube.com/embed/ZI9-TLSovpQ" frameborder="0" allowfullscreen></iframe>
-          <p><strong>Sensorimotor Learning with Stability Guarantees</strong><br>IEEE RA-L (Autonomous Neural Dynamic Policies)</p>
-        </div>
+          <button class="story-card" data-video-id="AkiE5izSgMk" data-title="Safe Bimanual Teleoperation with Language-Guided Collision Avoidance">
+            <span class="story-card__media">
+              <img src="assets/concept_figures/safe_bimanual_teleop.png" alt="Safe Bimanual Teleoperation demo thumbnail" loading="lazy">
+              <span class="story-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
+              </span>
+            </span>
+            <span class="story-card__caption">
+              <strong>Safe Bimanual Teleoperation</strong>
+              <span class="meta-label">Language-Guided Collision Avoidance</span>
+            </span>
+          </button>
 
-        <div class="video-entry">
-          <iframe src="https://www.youtube.com/embed/txT25hUpBPQ" frameborder="0" allowfullscreen></iframe>
-          <p><strong>Words2Contact</strong><br>Identifying Support Contacts from Verbal Instructions</p>
+          <button class="story-card" data-video-id="ZI9-TLSovpQ" data-title="Sensorimotor Learning with Stability Guarantees">
+            <span class="story-card__media">
+              <img src="assets/concept_figures/andps_v2.png" alt="Sensorimotor Learning with Stability Guarantees demo thumbnail" loading="lazy">
+              <span class="story-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
+              </span>
+            </span>
+            <span class="story-card__caption">
+              <strong>Sensorimotor Learning with Stability Guarantees</strong>
+              <span class="meta-label">IEEE RA-L · Autonomous Neural Dynamic Policies</span>
+            </span>
+          </button>
+
+          <button class="story-card" data-video-id="txT25hUpBPQ" data-title="Words2Contact">
+            <span class="story-card__media">
+              <img src="assets/concept_figures/words2contact.png" alt="Words2Contact demo thumbnail" loading="lazy">
+              <span class="story-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
+              </span>
+            </span>
+            <span class="story-card__caption">
+              <strong>Words2Contact</strong>
+              <span class="meta-label">Identifying Support Contacts from Verbal Instructions</span>
+            </span>
+          </button>
         </div>
       </div>
     </div>
+
+    <div id="video-modal" class="modal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
+      <div class="modal__backdrop"></div>
+      <div class="modal__panel">
+        <button id="video-modal-close" class="modal__close" aria-label="Close video">&times;</button>
+        <div id="video-modal-body" class="modal__body"></div>
+      </div>
+    </div>
   </main>
+  <script src="js/videos.js"></script>
 </body>
 </html>

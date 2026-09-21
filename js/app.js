@@ -3,73 +3,40 @@ function typeWriterWithMarkdown(element, markdownText, speed = 50) {
     let i = 0;
 
     function type() {
-
-        // split markdown text into words
         const all_words = markdownText.split(' ');
-
 
         if (i <= all_words.length) {
             currentText = all_words.slice(0, i).join(' ');
-            // console.log(currentText)
-            const words = currentText.split(' '); // Split the current text into words
-            const renderedHtml = marked.parse(words.join(' ')); // Parse the current words and join them back with spaces
-            // console.log(renderedHtml);
-            element.innerHTML = renderedHtml; // Insert rendered HTML
+            const renderedHtml = marked.parse(currentText);
+            element.innerHTML = renderedHtml;
             i++;
-            setTimeout(type, speed); // Adjust the speed as needed
+            setTimeout(type, speed);
         }
     }
     type();
-  }
+}
 
-  // Generate dynamic content for each page
-  function generateDynamicResponse(pageId) {
+function generateDynamicResponse(pageId) {
     const responseElement = document.getElementById('dynamic-response');
-    responseElement.innerHTML = ''; // Clear any previous content
+    responseElement.innerHTML = '';
     let markdownContent = "";
 
     if (pageId === 'home-content') {
-      markdownContent = "**Dionis Totsila** is a **Doctoral Researcher** at **INRIA Nancy (Human Centered Robotics (HUCEBOT) Team)** and the **University of Lorraine**, France, where he has been pursuing his Ph.D. since 2023 under the supervision of [Dr. Serena Ivaldi](https://members.loria.fr/SIvaldi/) and [Dr. Jean-Baptiste Mouret](https://members.loria.fr/JBMouret/). His current research focuses on enhancing robotic capabilities by integrating large language and vision-language models, as well as developing methods for learning bimanual robot skills with human guidance and natural language interaction. Prior to this, he gained industry experience as a **Robotics Engineer** at **Ragdoll Dynamics**, **London, UK** (2022–2023), where he contributed to improving animator workflows by applying robotic control and simulation techniques in Maya. Dionis also held a research role at the **AI Group** of the **Laboratory of Information Systems and Artificial Intelligence**, **University of Patras** (2021–2023), where he worked on advancing neural dynamic policies, reinforcement learning, learning from demonstration, and optimal control strategies. He is passionate about bridging the gap between artificial intelligence research and real-world applications, with interests in robot learning, human-robot interaction, and autonomous skill acquisition.";
-    }
-    else if (pageId === 'publications') {
-
+        markdownContent = "**Dionis Totsila** is a **Doctoral Researcher** at **Inria Nancy (Human Centered Robotics — HUCEBOT — Team)** and the **University of Lorraine**, France, where he has been pursuing his Ph.D. since 2023 under the supervision of [Dr. Serena Ivaldi](https://members.loria.fr/SIvaldi/) and [Dr. Jean-Baptiste Mouret](https://members.loria.fr/JBMouret/). His thesis, *Bidirectional Language-to-Action for Whole-Body Humanoid Control via Foundation Models*, explores how vision-language and large language models can drive teleoperation and whole-body control for humanoid robots, funded by the EU Horizon project **euROBIN**. Beyond the bench, he led the Inria team behind euROBIN's live demonstration at the **European Parliament**, organized the *Bridging Humanoid Robotics and Foundation Models* workshop at **IEEE-RAS Humanoids 2025** in Seoul, and taught Vision-Language Models for HRI at the **AIxHRI Summer School** in Nancy. Prior to his Ph.D., he was a **Robotics Engineer** at **Ragdoll Dynamics**, London (2022–2023), applying robotic control and simulation techniques to animator workflows in Maya, and a **Student Researcher** at the **AI Group, University of Patras** (2021–2023), developing Neural Dynamic Policies for learning from demonstration and reinforcement learning. He is passionate about bridging AI research and real robots, with interests in robot learning, human-robot interaction, and autonomous skill acquisition.";
     }
 
-
-    // Use the typewriter function to type and render the content
     typeWriterWithMarkdown(responseElement, markdownContent);
-  }
+}
 
-  document.addEventListener('DOMContentLoaded', () => {
-    // Call the function with the desired page ID
-    generateDynamicResponse('home-content');
-  });
-
-// Load and show profile image function
 function loadProfileImage() {
     const generatingMessage = document.getElementById('generating-image-message');
     const profileImage = document.getElementById('profile-image');
 
-    // Make the image visible after the "generating" message
-    profileImage.style.display = 'block';  // Show the image
-    generatingMessage.style.display = 'none'; // Hide the "generating image" message
-
-    // Set the image source (replace with your image path)
-    profileImage.src = 'assets/dt.jpg';  // Make sure to set your image path here.
+    profileImage.style.display = 'block';
+    generatingMessage.style.display = 'none';
 }
 
-// Auto-resize textarea based on content input
-const systemPromptBox = document.getElementById('system-prompt-box');
-if (systemPromptBox) {
-    systemPromptBox.addEventListener('input', function () {
-        this.style.height = 'auto';  // Reset height
-        this.style.height = (this.scrollHeight) + 'px'; // Set height based on scroll height
-    });
-}
-
-// Example usage - Generate content for a specific page
 document.addEventListener('DOMContentLoaded', () => {
-    // Call the function with the desired page ID
-    // Replace 'pageId' with the correct identifier for your page
     generateDynamicResponse('home-content');
+    setTimeout(loadProfileImage, 1500);
 });
