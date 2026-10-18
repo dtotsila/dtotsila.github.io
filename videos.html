@@ -33,76 +33,104 @@
   <main>
     <div class="container">
       <h1>Videos</h1>
+      <p class="video-intro">Robots doing real tasks, from the papers behind them. Click a video to play it here.</p>
 
-      <div class="story-carousel">
-        <button class="carousel-arrow carousel-arrow--prev" id="carousel-prev" aria-label="Previous video">
-          <svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></svg>
-        </button>
-        <button class="carousel-arrow carousel-arrow--next" id="carousel-next" aria-label="Next video">
-          <svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8"/></svg>
-        </button>
+      <div class="video-list">
 
-        <div class="story-track" id="story-track">
-          <button class="story-card" data-video-id="5mSIYuH4Mdk" data-title="From Vocal Instructions to Household Tasks">
-            <span class="story-card__media">
-              <img src="assets/concept_figures/eurobin_rap.png" alt="From Vocal Instructions to Household Tasks demo thumbnail" loading="lazy">
-              <span class="story-card__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
-              </span>
-            </span>
-            <span class="story-card__caption">
-              <strong>From Vocal Instructions to Household Tasks</strong>
-              <span class="meta-label">euROBIN · Tiago++ Coopetition</span>
+        <article class="video-row" id="laserattention">
+          <button class="video-row__media" data-video-src="assets/videos/laserattention.mp4" data-title="LaserAttention" aria-label="Play video: LaserAttention">
+            <img src="assets/video_thumbs/laserattention.jpg" alt="" loading="lazy">
+            <span class="video-row__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
             </span>
           </button>
+          <div class="video-row__body">
+            <span class="meta-label">IEEE Transactions on Robotics · Conditionally accepted · 2026</span>
+            <h2 class="video-row__title">LaserAttention</h2>
+            <p class="video-row__desc">Vision-language models for joint attention: the Talos humanoid turns spatial instructions like "place your right hand 10&nbsp;cm behind the glass" into a target, shows it before acting, and checks with the person.</p>
+            <span class="tag">First author</span>
+            <div class="video-row__links">
+              <a href="https://hal.science/hal-05766960" target="_blank" rel="noopener noreferrer">Preprint</a>
+            </div>
+          </div>
+        </article>
 
-          <button class="story-card" data-video-id="AkiE5izSgMk" data-title="Safe Bimanual Teleoperation with Language-Guided Collision Avoidance">
-            <span class="story-card__media">
-              <img src="assets/concept_figures/safe_bimanual_teleop.png" alt="Safe Bimanual Teleoperation demo thumbnail" loading="lazy">
-              <span class="story-card__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
-              </span>
-            </span>
-            <span class="story-card__caption">
-              <strong>Safe Bimanual Teleoperation</strong>
-              <span class="meta-label">Language-Guided Collision Avoidance</span>
+        <article class="video-row" id="eurobin">
+          <button class="video-row__media" data-video-id="5mSIYuH4Mdk" data-title="From Vocal Instructions to Household Tasks" aria-label="Play video: From Vocal Instructions to Household Tasks">
+            <img src="assets/video_thumbs/5mSIYuH4Mdk.jpg" alt="" loading="lazy">
+            <span class="video-row__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
             </span>
           </button>
+          <div class="video-row__body">
+            <span class="meta-label">IEEE Robotics and Automation Practice · 2026</span>
+            <h2 class="video-row__title">From Vocal Instructions to Household Tasks</h2>
+            <p class="video-row__desc">Spoken instructions turned into complete household tasks on Inria's TIAGo++ mobile manipulator, in the euROBIN Service Robots Coopetition.</p>
+            <span class="tag">Co-first author</span>
+            <div class="video-row__links">
+              <a href="https://doi.org/10.1109/RAP.2026.3676939" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://www.youtube.com/watch?v=5mSIYuH4Mdk" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </article>
 
-          <button class="story-card" data-video-id="ZI9-TLSovpQ" data-title="Sensorimotor Learning with Stability Guarantees">
-            <span class="story-card__media">
-              <img src="assets/concept_figures/andps_v2.png" alt="Sensorimotor Learning with Stability Guarantees demo thumbnail" loading="lazy">
-              <span class="story-card__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
-              </span>
-            </span>
-            <span class="story-card__caption">
-              <strong>Sensorimotor Learning with Stability Guarantees</strong>
-              <span class="meta-label">IEEE RA-L · Autonomous Neural Dynamic Policies</span>
+        <article class="video-row" id="words2contact">
+          <button class="video-row__media" data-video-id="txT25hUpBPQ" data-title="Words2Contact" aria-label="Play video: Words2Contact">
+            <img src="assets/video_thumbs/txT25hUpBPQ.jpg" alt="" loading="lazy">
+            <span class="video-row__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
             </span>
           </button>
+          <div class="video-row__body">
+            <span class="meta-label">IEEE-RAS Humanoids · 2024</span>
+            <h2 class="video-row__title">Words2Contact</h2>
+            <p class="video-row__desc">The Talos humanoid works out where to place its support contacts from verbal instructions, using foundation models.</p>
+            <span class="tag">First author</span>
+            <div class="video-row__links">
+              <a href="https://doi.org/10.1109/Humanoids58906.2024.10769902" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://www.youtube.com/watch?v=txT25hUpBPQ" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </article>
 
-          <button class="story-card" data-video-id="txT25hUpBPQ" data-title="Words2Contact">
-            <span class="story-card__media">
-              <img src="assets/concept_figures/words2contact.png" alt="Words2Contact demo thumbnail" loading="lazy">
-              <span class="story-card__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
-              </span>
-            </span>
-            <span class="story-card__caption">
-              <strong>Words2Contact</strong>
-              <span class="meta-label">Identifying Support Contacts from Verbal Instructions</span>
+        <article class="video-row" id="safe-bimanual-teleop">
+          <button class="video-row__media" data-video-id="AkiE5izSgMk" data-title="Safe Bimanual Teleoperation with Language-Guided Collision Avoidance" aria-label="Play video: Safe Bimanual Teleoperation with Language-Guided Collision Avoidance">
+            <img src="assets/video_thumbs/AkiE5izSgMk.jpg" alt="" loading="lazy">
+            <span class="video-row__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
             </span>
           </button>
-        </div>
-      </div>
-    </div>
+          <div class="video-row__body">
+            <span class="meta-label">IEEE Conference on Telepresence · 2025</span>
+            <h2 class="video-row__title">Safe Bimanual Teleoperation</h2>
+            <p class="video-row__desc">Two-arm teleoperation where natural-language instructions tell the robot what it may and may not collide with.</p>
+            <span class="tag">First author</span>
+            <div class="video-row__links">
+              <a href="https://doi.org/10.1109/Telepresence66096.2025.11521313" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://www.youtube.com/watch?v=AkiE5izSgMk" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </article>
 
-    <div id="video-modal" class="modal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
-      <div class="modal__backdrop"></div>
-      <div class="modal__panel">
-        <button id="video-modal-close" class="modal__close" aria-label="Close video">&times;</button>
-        <div id="video-modal-body" class="modal__body"></div>
+        <article class="video-row" id="andps">
+          <button class="video-row__media" data-video-id="ZI9-TLSovpQ" data-title="Sensorimotor Learning with Stability Guarantees" aria-label="Play video: Sensorimotor Learning with Stability Guarantees">
+            <img src="assets/video_thumbs/ZI9-TLSovpQ.jpg" alt="" loading="lazy">
+            <span class="video-row__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>
+            </span>
+          </button>
+          <div class="video-row__body">
+            <span class="meta-label">IEEE RA-L · 2025 · Presented at IROS 2025</span>
+            <h2 class="video-row__title">Sensorimotor Learning with Stability Guarantees</h2>
+            <p class="video-row__desc">Autonomous Neural Dynamic Policies: neural policies learned from demonstrations that are stable by construction, shown here on tasks including a quadruped following a path learned from 8 teleoperated demonstrations.</p>
+            <span class="tag">Co-first author</span>
+            <div class="video-row__links">
+              <a href="https://doi.org/10.1109/LRA.2024.3524878" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a href="https://www.youtube.com/watch?v=ZI9-TLSovpQ" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </main>
